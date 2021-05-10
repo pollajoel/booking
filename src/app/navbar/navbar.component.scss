@@ -1,0 +1,44 @@
+.add_trajet{
+  width: 30%;
+  padding: 6px 0px 0px 10px;
+  cursor: pointer;
+}
+.nav__bar{
+  display: flex;
+  padding: 22px 0px 10px 54px;
+  background-color: #ffffff;
+  color: #000000;
+  width: 100%;
+}
+.site__logo{width:30%;}
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  
+  }
+
+  *|*:link{
+    color: #24324f;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    text-transform: none;
+    line-height: 25px;
+    letter-spacing: 0px
+  }
+
+  .active{
+    color: #36b34b;
+  }

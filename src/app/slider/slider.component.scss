@@ -1,0 +1,71 @@
+.form__layout{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+
+div{
+    h1{
+        text-align: center;
+        font-weight: 600;
+        padding-bottom: 20px;
+        font-size: 54px;
+    }
+    p{
+        text-align: center;
+        font-size:13px;
+    }
+}
+
+
+.hero__slider{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+button{
+    width:150px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border:0px;
+    background-color: #323f58;
+    color:#fff;
+}
+
+input:focus,button:focus {
+    outline: none;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .left__radius{
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+    input{
+        height: 50px;
+        width:200px;
+        border:0px;
+    }
+
+}
+
+
+
+
+.slider__layout{
+    background-image: url("../../assets/homesilder.jpg");
+    height:700px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:top center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
