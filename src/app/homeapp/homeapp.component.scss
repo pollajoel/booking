@@ -1,0 +1,43 @@
+.section__layout{
+    padding-top:50px;
+    display: flex;
+    margin-top: 70px;
+    color:#fff;
+    background-color: #323f58;
+}
+
+.section__layout h4{
+    font-size: 21px;
+}
+
+.section__layout p{
+    width: 682px;
+    text-align: justify;
+}
+
+
+.section__layout h4, p{
+    padding-left: 114px;
+}
+
+.first__block{
+    width: 70%;
+}
+
+.phone__download{
+    width: 30%;
+}
+
+.download__layout{ 
+    margin-left: 114px;
+    width: 355px;
+    color: #000;
+    background: #fff;
+    border:0px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-top:40px;
+}
