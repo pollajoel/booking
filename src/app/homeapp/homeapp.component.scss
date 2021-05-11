@@ -1,5 +1,5 @@
 .section__layout{
-    padding-top:50px;
+    padding:70px 0px 70px 0px;
     display: flex;
     margin-top: 70px;
     color:#fff;
@@ -40,4 +40,54 @@
     border-radius: 20px;
     text-transform: uppercase;
     margin-top:40px;
+}
+
+.img__p{
+    width: 399px;
+    position: relative;
+    left: -110px;
+}
+
+.bus__image{
+    width: 606px;
+    height: 336px;
+}
+
+
+.bus__section{
+    display: flex;
+    padding: 50px 50px 50px 100px;
+}
+
+h5{
+    font-size: 19px;
+    text-transform: uppercase;
+    text-align: center;
+    color:#566985;
+    margin-bottom: 25px;
+}
+
+hr{
+    border: 1px dotted;
+}
+
+.bus__text{
+    padding-left: 30px;
+    padding-top: 30px;
+    text-align: justify;
+}
+
+.book__button{
+    color:#fff;
+    background-color: #24324f;
+    border: 0px;
+    font-size: 16px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    margin-left: 31px;
+    font-weight: 500;
+}
+
+.icon__size{
+    width:15px;
 }
