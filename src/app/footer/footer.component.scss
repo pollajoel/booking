@@ -1,0 +1,51 @@
+.footer__section{
+    background: #000;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    padding: 60px 5% 0px 5%;
+}
+
+.footer__widget{
+    width: 30%;
+
+}
+
+.widget__title{
+    color:#fff;
+    font-size: 20px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.71);
+    font-weight: 900;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+    padding-bottom: 25px;
+}
+
+.footer__menu li { 
+    color:#fff;
+    list-style: none;
+    list-style-image: url("../../assets/list.png");
+    padding-top: 11px;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.newsletter__text{
+    color:#fff;
+    width:70%;
+}
+
+.newsletter__form input{
+    height: 35px;
+}
+
+.newsletter__button{
+    height: 41px;
+    border: 0px;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #33b54a;
+}

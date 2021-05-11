@@ -10,7 +10,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SliderComponent } from './slider/slider.component';
 import { HomeaboutComponent } from './homeabout/homeabout.component';
 import { AboutComponent } from './about/about.component';
-import { HomeappComponent } from './homeapp/homeapp.component'
+import { HomeappComponent } from './homeapp/homeapp.component';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HomeappComponent } from './homeapp/homeapp.component'
     HomeaboutComponent,
     AboutComponent,
     HomeappComponent,
+    FooterComponent,
     
   ],
   imports: [
