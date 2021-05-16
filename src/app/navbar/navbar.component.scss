@@ -1,23 +1,33 @@
 .add_trajet{
+  margin-top: 3px;
   width: 20%;
   padding: 0px 0px 0px 10px;
   cursor: pointer;
+  span{
+    font-size: 14px;
+    padding-left: 2px;
+  }
 }
 .submit__trip{
-	background-color:#24324f;
-	border:0px;
-	border-radius:3px;
-	color:#fff;
-	padding: 13px 32px;
+    background-color:#24324f;
+    border:0px;
+    border-radius:50%;
+    color:#fff;
+	padding:9px 11px;
 	border-radius: 30px;
 	color: #fff;
 	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 11px;
+  &:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #36b34b;
+  }
+  
 }
 
 .nav__bar{
-	position: fixed;
 	width: 100%;
 	display: flex;
 	padding: 22px 0px 10px 54px;
@@ -44,9 +54,8 @@ nav {
   
   }
 
-  *|*:link{
+  *|*:link, span{
     color: #24324f;
-    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
     font-size: 14px;
     letter-spacing: 0px;
     text-transform: none;
@@ -56,4 +65,47 @@ nav {
 
   .active{
     color: #36b34b;
+  }
+
+
+  .avatar__login{
+    margin-left: -95px;
+    
+    ul{
+      position: absolute;
+      list-style: none;
+      padding: 0;
+      margin: -7px 0px 0px 0px;
+
+      li{
+        background-color: #fff;
+        width: 200px;
+        cursor: pointer;
+        
+        &:hover{
+          transition: width 5s;
+          transition-timing-function: linear;
+          ul{
+            display: block;
+            border: 1px solid #ededed;
+          }
+        }
+
+        img{
+          border-radius: 50%;
+        }
+        ul{
+          display: none;
+          margin-left: -163px;
+          margin-top: 1px;
+          li{
+            padding:10px 0px 10px 7px;
+          }
+          
+        }
+
+
+
+      }
+    }
   }

@@ -1,5 +1,8 @@
 body{
   overflow-x: hidden; /* Hide scrollbars */
+  color: #708c91;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 
@@ -40,5 +43,5 @@ $BookingWebsite-theme: mat-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Open Sans', sans-serif !important }
+html, body { height: 100%;}
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Noto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" }

@@ -33,6 +33,11 @@ button{
     border:0px;
     background-color: #323f58;
     color:#fff;
+    &:hover{
+            cursor: pointer;
+            color: #fff;
+            background-color: #36b34b;
+    }
 }
 
 input:focus,button:focus {
@@ -60,7 +65,7 @@ form{
 
 .slider__layout{
     background-image: url("../../assets/homesilder.jpg");
-    height:700px;
+    height:500px;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;

@@ -1,0 +1,106 @@
+
+<section class="single__trip__details">
+    <div>
+        <h1>Vend. 14 Mai 2021</h1>
+    </div>
+    <div class="trajet__ul">
+        <ul class="times">
+            <li>12h30</li>
+            <li>12h30</li>
+        </ul>
+        <ul>
+            <li class="departure">bruxelles</li>
+            <li class="separator"></li>
+            <li class="departure">Charleroi</li>
+        </ul>
+    </div>
+    <div class="bloc__price">
+        <span class="intitule__price">Prix Total pour 1 passager</span>
+        <span class="total__price">24,00</span>
+    </div>
+
+    <!-- USER header start -->
+    <section class="user__description" [routerLink] ="['/userdetails',1]">
+        <div class="header">
+            <div class="username__class">
+                <span>SunJ</span><br>
+                <span>4.6/ 5-78 avis</span>
+            </div>
+            <div class="avatar__class">
+                <img src="../../assets//profil.svg">
+                <fa-icon [icon]= faangle primaryOpacity="0.2" class="icon__color"></fa-icon>
+            </div>
+        </div>
+    </section>
+    <!-- End user header-->
+
+
+    <!-- Trip description START-->
+    <section class="text__description">
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere, quam vitae vehicula congue, velit tortor pharetra lorem, a ultrices magna nunc non mi. Suspendisse vel commodo erat, et suscipit nisi. Vivamus facilisis justo sit amet tellus tempus, at dapibus nulla interdum. Pellentesque eu velit vehicula metus scelerisque euismod.
+            </p>
+        </div>
+    </section>
+    <!-- trip description END--> 
+
+
+     <!--BEGIN contact section-->
+     <section class="contact__section" [routerLink] ="['/userdetails',1]">
+        <div>
+            <fa-icon [icon]= fasms primaryOpacity="0.2"></fa-icon>
+            <span>Contacter yves</span>
+        </div>
+    </section>
+    <!-- END contact section-->
+
+
+
+    <!-- start user informations section -->
+    <section class="travel__preferences">
+        <div class = "state" *ngFor="let status of preferences">
+            <span><fa-icon [icon]= status.icon  primaryOpacity="0.2"></fa-icon></span>
+            <span>{{ status.name}}</span>
+        </div>
+    </section>
+    <!-- End user informations section-->
+    
+    <!-- car type start-->
+    <section class="car__type">
+        <div class="container">
+        <div>
+            <span class="car__name">Car Name</span><br>
+            <span>Color</span>
+        </div>
+        <div>
+            <img src="../../assets/car-saloon.svg" class="car__image">
+        </div>
+    </div>
+
+    </section>
+    <!-- end car type-->
+    <div class="title">
+        <h2>Passagers</h2>
+    </div>
+    <section class="passenger_for_this_trip" *ngFor="let pass of listPassengers" [routerLink] ="['/userdetails',1]">
+        <div class="list__passagers" >
+            <span>
+                NameOfuser<br>
+                bruxelles   <fa-icon [icon]=faarrow primaryOpacity="0.2"></fa-icon>
+                Chaleroi
+            </span>
+            <span>
+                <img src="../../assets/profil.svg">
+                <fa-icon [icon]= faangle primaryOpacity="0.2" class="icon__color"></fa-icon>
+            </span>
+           
+        </div>
+    </section>
+
+    <div class="subscribe__trip">
+        <button>Continuer</button>
+    </div> 
+</section>
+
+

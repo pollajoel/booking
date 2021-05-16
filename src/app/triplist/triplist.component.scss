@@ -1,0 +1,88 @@
+.trip__section{
+    background: #ededed;
+    margin-bottom: 100px;
+}
+
+.trip__list{
+    border: 1px solid #ededed;
+    box-shadow: #ededed ;
+    margin-top:100px;
+    margin-bottom: 500px;
+    width: 40%;
+    display: flex;
+    align-content: center;
+    height: 187px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.trip__box{
+width: 100%; 
+display: flex;
+height: 400px;
+justify-content: center;
+margin-bottom: -166px;
+cursor: pointer;
+}
+
+.trip__description{
+    width:40%;
+}
+
+.departure{
+    list-style-image: url("../../assets/departure.png");
+    font-size: 13px;
+    font-weight: bolder
+}
+
+.separator{
+    list-style-image: url("../../assets/separateur.png");
+}
+
+.number__people{
+    position: absolute;
+}
+
+.times{
+    list-style-type: none;
+}
+.times li span{
+    font-weight: 800;
+}
+.times > li {
+    margin-bottom: 50px;
+}
+
+.user__profile{
+    width: 100%;
+    position: absolute;
+    margin-top:125px;
+    margin-left:20px;
+    display: flex;
+}
+
+.user__profile img {
+
+    border-radius: 88px;
+    border: 1px solid #ededed;
+    height: 68px;
+    width: 68px;
+}
+
+
+
+
+.price__layout{
+    width: 30%;
+    padding-top: 14px;
+    text-align: right;
+}
+
+.userName{
+    padding-left: 13px;
+}
+
+.features__class{position: absolute;}

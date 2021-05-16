@@ -49,3 +49,29 @@
     border-bottom-right-radius: 20px;
     background: #33b54a;
 }
+
+.footer__menu li a:hover{
+    color:#33b54a;
+    cursor: pointer;
+}
+
+.footer__copyright{
+    height: 30px;
+    text-align: center;
+    padding: 27px 0px 10px 0px;
+}
+
+.contact__menu{
+    color:#fff;
+}
+
+.contact__menu li {
+    list-style: none;
+    padding-top: 11px;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.icon__color{
+    color:#33b54a;
+}

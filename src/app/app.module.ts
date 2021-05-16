@@ -11,7 +11,12 @@ import { SliderComponent } from './slider/slider.component';
 import { HomeaboutComponent } from './homeabout/homeabout.component';
 import { AboutComponent } from './about/about.component';
 import { HomeappComponent } from './homeapp/homeapp.component';
-import { FooterComponent } from './footer/footer.component'
+import { FooterComponent } from './footer/footer.component';
+import { TripComponent } from './trip/trip.component';
+import { TriplistComponent } from './triplist/triplist.component';
+import { SingletripComponent } from './singletrip/singletrip.component';
+import { SingletripcontainComponent } from './singletripcontain/singletripcontain.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component'
 
 @NgModule({
   declarations: [
@@ -23,6 +28,11 @@ import { FooterComponent } from './footer/footer.component'
     AboutComponent,
     HomeappComponent,
     FooterComponent,
+    TripComponent,
+    TriplistComponent,
+    SingletripComponent,
+    SingletripcontainComponent,
+    UserdetailsComponent,
     
   ],
   imports: [

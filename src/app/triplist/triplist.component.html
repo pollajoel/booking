@@ -1,0 +1,34 @@
+<section class="trip__section">
+
+    <div class="trip__box" *ngFor="let tripi of trip" >
+            <div class="trip__list" [routerLink] ="['/singletrip',tripi.id]">
+                <ul class="times">
+                    <li><span>12H30</span></li>
+                    <li><span>14h30</span></li>
+                </ul>
+                <ul class="trip__description">
+                    <li class="departure">Bruxelles</li>
+                    <li class="separator">
+                        <span class="number__people"></span>
+                    </li>
+                    <li class="departure">Charleroi</li>
+                </ul>
+                <div class="price__layout">29eur</div>
+                <div class="user__profile">
+                    <div>
+                        <img src="../../assets/wakawaka.PNG" class="image__profil">
+                    </div>
+                    <div>
+                        <span class="userName">UserName</span><br>
+                        <span class="userName"> <fa-icon [icon]="fastar" class="icon__color"></fa-icon></span>
+                        4,7
+                    </div>
+                    <div class="features__class">
+                      
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+</section>
