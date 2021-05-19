@@ -81,6 +81,8 @@ nav {
         background-color: #fff;
         width: 200px;
         cursor: pointer;
+        font-size: 16px;
+       
         
         &:hover{
           transition: width 5s;
@@ -88,6 +90,30 @@ nav {
           ul{
             display: block;
             border: 1px solid #ededed;
+            margin-top:2px;
+            padding: 0px 2px 0px 2px;
+          li{
+            span{
+              font-size: 14px;
+              width: 60%;
+            }
+            &:hover{
+              background-color: #ebebeb;
+            }
+
+            .icon__Right{
+              position: relative;
+             width: 20%;
+             text-align: right;
+             color: #24324f;
+            }
+            .icon__left{
+              position: relative;
+             width: 20%;
+             text-align: left;
+             color:#ff9e67;
+            }
+          }
           }
         }
 
@@ -97,7 +123,7 @@ nav {
         ul{
           display: none;
           margin-left: -163px;
-          margin-top: 1px;
+          margin-top: 10px;
           li{
             padding:10px 0px 10px 7px;
           }
@@ -108,4 +134,19 @@ nav {
 
       }
     }
+  }
+
+  .submenu{
+    display: flex;
+  }
+
+  .notConnected{
+    display: flex;
+  }
+  .notlogin{
+    width: 50%;
+  }
+  .notconnect__icon{
+    @extend .notlogin;
+    text-align: right;
   }

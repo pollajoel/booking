@@ -1,5 +1,5 @@
 .form__layout{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(206, 212, 255, 0.5);;
     padding: 10px;
     border-radius: 30px;
 }
@@ -8,13 +8,17 @@
 div{
     h1{
         text-align: center;
-        font-weight: 600;
         padding-bottom: 20px;
         font-size: 54px;
     }
     p{
         text-align: center;
-        font-size:13px;
+        font-size:smaller;
+        font-weight: 600;
+        color:#fff;
+        span{
+            color:#000;
+        }
     }
 }
 
@@ -23,7 +27,7 @@ div{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    color: #fff;
+    color: #566985;
 }
 
 button{
@@ -58,18 +62,17 @@ form{
         border:0px;
     }
 
+    
 }
 
 
 
 
 .slider__layout{
-    background-image: url("../../assets/homesilder.jpg");
-    height:500px;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: url("../../assets/Citydriver-cuate.svg");
+    height:600px;
     background-repeat: no-repeat;
-    background-position:top center;
+    background-position:center;
     justify-content: center;
     align-items: center;
     display: flex;

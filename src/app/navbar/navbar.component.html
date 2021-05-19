@@ -2,7 +2,8 @@
     <div class="site__logo">logo</div>
     <nav>        
         <ul>
-            <li><a routerLink="/index" routerLinkActive="active">Accueil</a></li>
+            <li><a routerLink="/index" routerLinkActive="active">Accueil
+            </a></li>
             <li><a routerLink="/about" routerLinkActive="active">A propos</a></li>
             <li><a routerLink="/trip">Trouver un trajet</a></li>
             <li><a routerLink="/index">Comment ça marche ?</a></li>
@@ -13,12 +14,31 @@
     <div class="avatar__login">
     <ul>
         <li><img src="../../assets/profil.svg"/>
-            <ul>
-                <li>Connexion</li>
-                <li>Inscription</li>
-                <li>Mon compte</li>
-                <li>Mes trajets</li>
-                <li>Mes reservations</li>
+            <ul *ngIf="!IsLogin">
+                <li class="notConnected">
+                    <span class="notlogin">connexion</span>
+                    <span class="notconnect__icon">
+                        <fa-icon [icon]= faangle primaryOpacity="1" class="notlogin"></fa-icon>
+                    </span>
+                </li>
+                <li class="notConnected">
+                    <span class="notlogin">Inscription</span>
+                    <span class="notconnect__icon">
+                        <fa-icon [icon]= faangle primaryOpacity="1" class="notconnect__icon"></fa-icon>
+                     </span>
+                </li>
+            </ul>
+
+            <ul *ngIf="IsLogin">
+
+                <li *ngFor="let menu of loginMenu" class="submenu" >
+                    <fa-icon [icon]= menu.iconleft primaryOpacity="1" class="icon__left"></fa-icon>
+                    <span>{{ menu.title}}</span>
+                    <fa-icon [icon]= faangle primaryOpacity="1" class="icon__Right"></fa-icon>
+                </li>
+                
+
+
             </ul>
         </li>
     </ul>

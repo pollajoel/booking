@@ -9,16 +9,16 @@
 
 .step__layout{
     width: 25%;
-    border: 1px solid #eee;
+    border: 1px solid;
     border-radius: 6px;
-    background-color: #f8fbfe;
+    background-color: #323f58;
     border-top-left-radius: 30px;
     cursor: pointer;
     animation: bounce;
     animation-duration: 3s;
 
     &:hover{
-        background-color: #36b34b;
+        background-color: #ff9e67;
         color:#fff;
         h2{
             color:#fff;
@@ -37,7 +37,7 @@
      text-align: center;
      font-weight: 400;
      font-size: 18px;
-     color: #566985;
+     color: #fff;
     
  }
 
@@ -59,18 +59,22 @@
 
  .icon__color{
      font-size: 11px;
-    color:#323f58;
+    color:#fff;
  }
 
  .about__title{
      text-align: center;
      margin:70px 0px 70px 0px;
+     p{
+        color: #000;
+    }
  }
 
  .about__title h1 {
-    color: #566985;
+    color: #000;
     font-size: 34px;
     font-weight: 700;
+    
  }
 
  .border__layout{
@@ -80,3 +84,6 @@
     border: 0px;
     margin-bottom: 26px;
  }
+
+
+ p{color:#fff;}

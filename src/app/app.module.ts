@@ -16,7 +16,11 @@ import { TripComponent } from './trip/trip.component';
 import { TriplistComponent } from './triplist/triplist.component';
 import { SingletripComponent } from './singletrip/singletrip.component';
 import { SingletripcontainComponent } from './singletripcontain/singletripcontain.component';
-import { UserdetailsComponent } from './userdetails/userdetails.component'
+import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { OfferseatComponent } from './offerseat/offerseat.component';
+import { ContactComponent } from './contact/contact.component'
+import { GooglePlaceModule } from "ngx-google-places-autocomplete";
+import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 
 @NgModule({
   declarations: [
@@ -33,6 +37,8 @@ import { UserdetailsComponent } from './userdetails/userdetails.component'
     SingletripComponent,
     SingletripcontainComponent,
     UserdetailsComponent,
+    OfferseatComponent,
+    ContactComponent,
     
   ],
   imports: [
@@ -40,7 +46,10 @@ import { UserdetailsComponent } from './userdetails/userdetails.component'
     AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    MaterialModule
+    MaterialModule,
+    GooglePlaceModule,
+    OwlDateTimeModule,
+    OwlNativeDateTimeModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

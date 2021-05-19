@@ -6,7 +6,7 @@ import {AboutComponent} from "./about/about.component"
 import {TripComponent} from "./trip/trip.component"
 import {UserdetailsComponent} from "./userdetails/userdetails.component"
 import { SingletripComponent } from "./singletrip/singletrip.component"
-
+import { ContactComponent } from "./contact/contact.component";
 const routes: Routes = [
   {
     path:"index",
@@ -32,6 +32,11 @@ const routes: Routes = [
   {
     path:"userdetails/:id",
     component:UserdetailsComponent
+  }
+  ,
+  {
+    path:"contactus",
+    component:ContactComponent
   }
 
 ];

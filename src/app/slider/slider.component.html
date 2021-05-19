@@ -2,14 +2,15 @@
    <!-- start slider text and searchbar-->
     <div>
         <div class="hero__slider">
-       <h1> ET si on Partait ensemble</h1>
-       <p>Faites des économies lors de vos déplacements en voiture ,Nous vous offrons une excellente solution.</p>
+       <h1> Et si on partait ensemble ?</h1>
+       <p>Faites des économies lors de vos déplacements en voiture ,Nous vous offrons une <span>excellente solution.</span></p>
         <div class="form__layout">
             <form>
-                <input type="text" name="" [placeholder]="whenplaceholder" class="left__radius"/>
-                <input type="text" name="" [placeholder]="fromplaceholder"/>
-                <input type="text" name="" [placeholder]="toplaceholder" class="right__radius"/>
-                <button>{{ buttonlabel}}</button>
+                <input type="text" [min]=startAt name="" [placeholder]="whenplaceholder" class="left__radius datepicker" [owlDateTimeTrigger]="dt1" [owlDateTime]="dt1"/>
+                <owl-date-time   [pickerMode]="'popup'" [pickerType]="'calendar'" [startAt]=startAt  #dt1></owl-date-time>
+                <input type="text" name="" [placeholder]="fromplaceholder" ngx-google-places-autocomplete/>
+                <input type="text" name="" [placeholder]="toplaceholder" class="right__radius" ngx-google-places-autocomplete/>
+                <button (click) = "onSubmit()">{{ buttonlabel}}</button>
             </form>
         </div>
     </div>

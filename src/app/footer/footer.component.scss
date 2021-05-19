@@ -39,6 +39,9 @@
 
 .newsletter__form input{
     height: 35px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;   
+    border: 0px; 
 }
 
 .newsletter__button{
@@ -47,7 +50,7 @@
     cursor: pointer;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background: #33b54a;
+    background: #ff9e67;
 }
 
 .footer__menu li a:hover{

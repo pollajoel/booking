@@ -10,11 +10,17 @@ export class SliderComponent implements OnInit {
   whenplaceholder = "Quand partez-vous?";
   fromplaceholder = "D'ou partez-vous?";
   toplaceholder = "Ou allez-vous?";
+  public startAt = new Date();
   public buttonlabel = "Chercher"
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  public onSubmit(){
+    alert("bonjour");
   }
 
 }
