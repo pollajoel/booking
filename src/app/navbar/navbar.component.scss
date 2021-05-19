@@ -89,9 +89,8 @@ nav {
           transition-timing-function: linear;
           ul{
             display: block;
-            border: 1px solid #ededed;
             margin-top:2px;
-            padding: 0px 2px 0px 2px;
+            padding: 0px 4px 10px 4px;
           li{
             span{
               font-size: 14px;
@@ -124,8 +123,9 @@ nav {
           display: none;
           margin-left: -163px;
           margin-top: 10px;
+          padding: 2px ;
           li{
-            padding:10px 0px 10px 7px;
+            padding:10px 3px 3px 7px;
           }
           
         }
