@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+
+<div class="section__layout">
+    <form>
+        <section [ngStyle]="{'display':StepForm.firstStep }">
+        <div class="form__layout firstep">
+            <label class="form__layout__label">D'où partez-vous?</label>
+            <div class="form__layout__input2">
+                <button (click)="Onclick($event)">
+                    <fa-icon [icon]= faSearch primaryOpacity="1" class="notconnect__icon"></fa-icon>
+                </button ><input type="text" name="departure" placeholder="ex: Paris">
+            </div>
+        </div>
+    </section>
+
+        <div class="secondstep" [ngStyle]="{'display':StepForm.secondStep }">
+            <div class="secondstep__first">
+                <div class="form__layout second_step2">
+                    <label class="form__layout__label">où allez-vous?</label>
+                    <div class="form__layout__input2 second_step2">
+                        <button>
+                            <fa-icon [icon]= faSearch primaryOpacity="1" class="notconnect__icon"></fa-icon>
+                        </button><input type="text" name="departure" placeholder="ex: Paris">
+                    </div>
+                </div>
+                <div>
+                        <button>Continuer</button>
+                </div>
+            </div>
+            <div class="secondstep__second  ">
+                MAP HERE!
+            </div>
+
+        </div>
+
+
+
+
+    </form>
+
+</div>
+<app-footer></app-footer>

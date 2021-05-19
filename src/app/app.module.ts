@@ -21,6 +21,7 @@ import { OfferseatComponent } from './offerseat/offerseat.component';
 import { ContactComponent } from './contact/contact.component'
 import { GooglePlaceModule } from "ngx-google-places-autocomplete";
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
+import { SubmittripComponent } from './submittrip/submittrip.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
     UserdetailsComponent,
     OfferseatComponent,
     ContactComponent,
+    SubmittripComponent,
     
   ],
   imports: [
