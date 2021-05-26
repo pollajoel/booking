@@ -17,7 +17,7 @@ const routes: Routes = [
    {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'trip', component: TripComponent},
-  {path: 'ingletrip/:id', component: SingletripComponent },
+  {path: 'singletrip/:id', component: SingletripComponent },
   {path: 'userdetails/:id', component: UserdetailsComponent },
   {path: 'contactus', component: ContactComponent},
   {path: 'newTrip', component: SubmittripComponent},
