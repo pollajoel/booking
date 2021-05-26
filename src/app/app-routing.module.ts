@@ -1,17 +1,18 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from "./app.component"
-import {HomeComponent} from "./home/home.component"
-import {AboutComponent} from "./about/about.component"
-import {TripComponent} from "./trip/trip.component"
-import {UserdetailsComponent} from "./userdetails/userdetails.component"
-import { SingletripComponent } from "./singletrip/singletrip.component";
-import { ContactComponent } from "./contact/contact.component";
-import { SubmittripComponent } from "./submittrip/submittrip.component";
+import { AppComponent } from './app.component';
+import {HomeComponent} from './home/home.component';
+import {AboutComponent} from './about/about.component'
+import {TripComponent} from './trip/trip.component';
+import {UserdetailsComponent} from './userdetails/userdetails.component';
+import { SingletripComponent } from './singletrip/singletrip.component';
+import { ContactComponent } from './contact/contact.component';
+import { SubmittripComponent } from './submittrip/submittrip.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 const routes: Routes = [
   {
-    path:"index",
-    component:HomeComponent
+    path: 'index',
+    component: HomeComponent
   },
    {
 	   path:"",
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path:"newTrip",
     component:SubmittripComponent
+  },
+  {
+    path:"dashboard",
+    component:DashboardComponent
   }
 
 ];

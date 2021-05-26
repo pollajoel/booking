@@ -22,14 +22,14 @@
 	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 11px;
-  
+
   &:hover{
     cursor: pointer;
     color: #fff;
     background-color: #36b34b;
   }
-  
-  
+
+
 }
 
 .nav__bar{
@@ -58,7 +58,7 @@ nav {
       text-decoration: none;
       cursor: pointer;
     }
-  
+
   }
 
   *|*:link, span{
@@ -77,21 +77,23 @@ nav {
 
   .avatar__login{
     margin-left: -95px;
-    
+
     ul{
       position: absolute;
       list-style: none;
       padding: 0;
       margin: -7px 0px 0px 0px;
-      
+      z-index: 1000;
+      background: #fff;
+
 
       li{
         background-color: #fff;
         width: 200px;
         cursor: pointer;
         font-size: 16px;
-       
-        
+
+
         &:hover{
           transition: width 5s;
           transition-timing-function: linear;
@@ -122,7 +124,7 @@ nav {
               position: relative;
              width: 20%;
              text-align: left;
-             color:#ff9e67;
+             color:#323f58;
             }
           }
           }
@@ -134,12 +136,16 @@ nav {
         ul{
           display: none;
           margin-left: -163px;
-          margin-top: 10px;
           padding: 2px ;
+          position: relative;
+          top: 30px;
           li{
             padding:10px 3px 3px 7px;
+            width: 100%;
+            font-size: 26px;
+            font-weight: lighter;
           }
-          
+
         }
 
 

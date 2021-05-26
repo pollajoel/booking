@@ -17,7 +17,7 @@ div{
         font-weight: 600;
         color:#fff;
         span{
-            color:#000;
+            color:fff;
         }
     }
 }
@@ -27,7 +27,7 @@ div{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    color: #566985;
+    color: #fff;
 }
 
 button{
@@ -62,18 +62,19 @@ form{
         border:0px;
     }
 
-    
+
 }
 
 
 
 
 .slider__layout{
-    background-image: url("../../assets/Citydriver-cuate.svg");
+    background-image: url("../../assets/homesilder.jpg");
     height:600px;
     background-repeat: no-repeat;
     background-position:center;
     justify-content: center;
     align-items: center;
     display: flex;
+   background-size: cover;
 }

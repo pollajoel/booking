@@ -1,6 +1,6 @@
 <div class="nav__bar">
     <div class="site__logo"><img class="logo" src="../../assets/logo.jpg"></div>
-    <nav>        
+    <nav>
         <ul>
             <li><a routerLink="/index" routerLinkActive="active">Accueil
             </a></li>
@@ -10,7 +10,7 @@
         </ul>
     </nav>
     <div class="add_trajet" routerLink="/newTrip"><button class="submit__trip"><strong>+</strong></button><span>Proposer un trajet</span></div>
-    
+
     <div class="avatar__login">
     <ul>
         <li><img src="../../assets/profil.svg"/>
@@ -31,12 +31,13 @@
 
             <ul *ngIf="IsLogin">
 
-                <li *ngFor="let menu of loginMenu" class="submenu" >
+                <li *ngFor="let menu of loginMenu" class="submenu" [routerLink]="menu.urlRoute">
+
                     <fa-icon [icon]= menu.iconleft primaryOpacity="1" class="icon__left"></fa-icon>
                     <span>{{ menu.title}}</span>
                     <fa-icon [icon]= faangle primaryOpacity="1" class="icon__Right"></fa-icon>
                 </li>
-                
+
 
 
             </ul>

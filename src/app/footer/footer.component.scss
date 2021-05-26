@@ -23,7 +23,7 @@
     padding-bottom: 25px;
 }
 
-.footer__menu li { 
+.footer__menu li {
     color:#fff;
     list-style: none;
     list-style-image: url("../../assets/list.png");
@@ -40,17 +40,21 @@
 .newsletter__form input{
     height: 35px;
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;   
-    border: 0px; 
+    border-bottom-left-radius: 20px;
+    border: 0px;
 }
 
 .newsletter__button{
     height: 41px;
-    border: 0px;
+    border: 0px solid #24324f;
     cursor: pointer;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
     background: #ff9e67;
+    color:#fff;
+  &:hover{
+    color:#fff;
+    background-color:#33b54a;
+  }
 }
 
 .footer__menu li a:hover{
@@ -77,4 +81,16 @@
 
 .icon__color{
     color:#33b54a;
+}
+
+form{
+
+  border: 7px solid #fff;
+  width: 232px;
+  background: #fff;
+  border-radius: 23px;
+  input:focus{
+    outline: none;
+  }
+
 }

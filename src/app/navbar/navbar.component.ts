@@ -19,15 +19,15 @@ export class NavbarComponent implements OnInit {
 
   faarrowgle  = faArrowRight;
   faangle = faAngleRight;
-  public IsLogin = false;
+  public IsLogin = true;
 
   loginMenu = [
-    {title:"Tableau de bord",icon:faAngleRight, iconleft:faHome},
-    {title:"Vos trajets",icon:faAngleRight,iconleft:faQuoteLeft},
-    {title:"Boîte de reception",icon:faAngleRight,iconleft:faComment},
-    {title:"Profil",icon:faAngleRight,iconleft:faUserCircle},
-    {title:"Déconnexion",icon:faAngleRight,iconleft:faTimesCircle}
-  ]
+    { title: 'Tableau de bord', icon: faAngleRight, iconleft: faHome, urlRoute: '/dashboard'},
+    { title: 'Vos trajets', icon: faAngleRight, iconleft: faQuoteLeft, urlRoute: '/Trips'},
+    { title: 'Boîte de reception', icon: faAngleRight, iconleft: faComment, urlRoute: '/Messages'},
+    { title: 'Profil', icon: faAngleRight, iconleft: faUserCircle, urlRoute: '/profils'},
+     {title: 'Déconnexion', icon: faAngleRight, iconleft: faTimesCircle, urlRoute: '/Trips'}
+  ];
 
 
 
