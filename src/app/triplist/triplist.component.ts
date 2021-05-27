@@ -8,14 +8,7 @@ import {faStar} from '@fortawesome/free-solid-svg-icons';
 })
 export class TriplistComponent implements OnInit {
   fastar = faStar;
-  trip = [
-    {id:1},
-    {id:2},
-    {id:3},
-    {id:4},
-    {id:5}
-  ];
-  
+  trip = [{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}];
   constructor() { }
 
   ngOnInit(): void {
