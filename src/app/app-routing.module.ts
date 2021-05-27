@@ -9,6 +9,8 @@ import { SingletripComponent } from './singletrip/singletrip.component';
 import { ContactComponent } from './contact/contact.component';
 import { SubmittripComponent } from './submittrip/submittrip.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProfilegeneraleComponent} from './profilegenerale/profilegenerale.component';
+
 const routes: Routes = [
   {
     path: 'index',
@@ -21,8 +23,9 @@ const routes: Routes = [
   {path: 'userdetails/:id', component: UserdetailsComponent },
   {path: 'contactus', component: ContactComponent},
   {path: 'newTrip', component: SubmittripComponent},
-  {path: 'dashboard', component: DashboardComponent}
-];
+  {path: 'dashboard', component: DashboardComponent},
+  {path: 'profile/generale', component: ProfilegeneraleComponent}
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

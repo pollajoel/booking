@@ -1,5 +1,5 @@
 .dashboard{
-  width:70%;
+  width:75%;
   padding-left: 10%;
   padding-bottom: 100px;
   margin-top:10px;
@@ -101,4 +101,57 @@
   color:#36b34b;
   cursor: pointer;
 }
+
+.messages{
+  text-align: right;
+  cursor: pointer;
+  color:#33b54a;
+}
+
+.messageTitle{
+  font-size: 23px;
+  font-weight: normal;
+}
+
+.offres{
+  border: 1px solid #ededed;
+  margin-top:50px;
+  height: 160px;
+  border-radius: 2px;
+  &__content{
+    height: 120px;
+    display: flex;
+    .offresimagescontent{
+      width: 70%;
+      button{
+        padding: 10px;
+        width: 145px;
+        color:#ffffff;
+        font-weight: bold;
+        border: 0px;
+        background: #24324f;
+        border-radius: 3px;
+        cursor: pointer;
+        &:hover{
+          background: #33b54a;
+        }
+      }
+    }
+    .offresimages{
+      width: 30%;
+    }
+  }
+  &__footer{
+    border-top: 1px solid #ededed;
+    height: 40px;
+    padding-left: 2px;
+    padding-top: 8px;
+    padding-left: 5px;
+    cursor: pointer;
+    &:hover{
+      background: #dddddd;
+    }
+  }
+}
+
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
+import {faArrowRight, faExclamationCircle, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,6 +9,9 @@ import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 })
 export class DashboardComponent implements OnInit {
   faArrow = faArrowRight;
+  faExclamation = faExclamationCircle;
+  faEnveloppe = faEnvelope;
+  generalemenu = '/profile/generale';
   constructor() { }
 
   ngOnInit(): void {

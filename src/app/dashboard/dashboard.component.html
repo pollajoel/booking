@@ -13,8 +13,8 @@
       </div>
       <div class="button">
         <div class="button__titlename">Bonjour Polla</div>
-        <div class="button__title menuspeciale"><fa-icon [icon]= 'faArrow'  primaryOpacity="0.2" class="icon__color"></fa-icon> Modifier mon profil</div>
-        <div class="button__title menuspeciale"><fa-icon [icon]= 'faArrow'  primaryOpacity="0.2" class="icon__color"></fa-icon> Voir mon profil public</div>
+        <div [routerLink]="generalemenu" class="button__title menuspeciale"><fa-icon [icon]= 'faArrow'  primaryOpacity="0.2" class="icon__color"></fa-icon> Modifier mon profil</div>
+        <div [routerLink]="['/userdetails',1]" class="button__title menuspeciale"><fa-icon [icon]= 'faArrow'  primaryOpacity="0.2" class="icon__color"></fa-icon> Voir mon profil public</div>
       </div>
     </div>
 
@@ -37,9 +37,9 @@
 
       <div>
         <h1 class="dashboardtitle">Vérifications</h1>
-        <div class="menu">Télephone vérifié</div>
-        <div class="menu">Faites vérifier votre email</div>
-        <div class="menu">Faites vérifier votre CNI</div>
+        <div class="menu"><fa-icon [icon]= 'faExclamation'  primaryOpacity="0.2" class="icon__color"></fa-icon> Télephone vérifié</div>
+        <div class="menu"><fa-icon [icon]= 'faExclamation'  primaryOpacity="0.2" class="icon__color"></fa-icon> Faites vérifier votre email</div>
+        <div class="menu"><fa-icon [icon]= 'faExclamation'  primaryOpacity="0.2" class="icon__color"></fa-icon> Faites vérifier votre CNI</div>
         <div class="menuspeciale"> <fa-icon [icon]= 'faArrow'  primaryOpacity="0.2" class="icon__color"></fa-icon> Compléter les vérifications</div>
          <hr class="separator"/>
       </div>
@@ -52,8 +52,24 @@
 
     </div>
     <div class="dasboardaccount__section">
-      <div>0 nouveaux Messages</div>
-      <hr class="separator"/>
+      <div class="messageTitle"><fa-icon [icon]= 'faEnveloppe'  primaryOpacity="0.2" class="icon__color"></fa-icon> Nouveaux messages (0)</div>
+       <hr class="separator"/>
+      <div><p class="messages">Voir tous les messages</p></div>
+      <div class="offres">
+
+        <div class="offres__content">
+          <div class="offresimages"></div>
+           <div class="offresimagescontent">
+             <h2>Rien que pour vous</h2>
+             <p>Découvrez toutes nos offres</p>
+             <button>En savoir plus</button>
+           </div>
+        </div>
+        <div class="offres__footer">
+          <a>Cela ne m'intéresse pas</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>

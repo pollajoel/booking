@@ -23,6 +23,7 @@ import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { SubmittripComponent } from './submittrip/submittrip.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProfilegeneraleComponent } from './profilegenerale/profilegenerale.component';
 
 
 
@@ -46,6 +47,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ContactComponent,
     SubmittripComponent,
     DashboardComponent,
+    ProfilegeneraleComponent,
   ],
   imports: [
     BrowserModule,
