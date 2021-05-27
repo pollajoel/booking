@@ -1,0 +1,111 @@
+<div>
+<app-navbar></app-navbar>
+  <div class="layout">
+    <div class="layout__row">
+      <h1>Informations personnelles</h1>
+
+      <!-- start of component -->
+      <div class="layout__data" *ngFor="let userdata of UserData">
+        <div>
+          <button  class="button">
+            <span>
+              <span>{{ userdata.type}}</span>
+              <span>{{ userdata.value }}</span>
+            </span>
+          </button>
+        </div>
+      </div>
+      <hr class="separator"/>
+      <!-- End on component-->
+
+      <!-- Minibio ajout -->
+      <div class="layout__data">
+        <div>
+          <button  class="button">
+            <span>
+              <span>Minibio</span>
+              <span>Contenu de la description</span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="layout__data">
+        <div>
+          <button  class="button">
+            <span>
+              <span class="minibio"><fa-icon [icon]= faplus primaryOpacity="1" class="icon__color"></fa-icon>Ajouter une Minibio</span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+      <!-- fin ajout minibio -->
+      </div>
+  </div>
+
+
+
+
+  <!-- start form -->
+      <div class="form__layout" style="display: none">
+        <div (click)="closed()" class="closed">Closed</div>
+
+        <div class="forminput">
+          <label>Quel est votre prenom?</label>
+          <div class="forminput__container">
+            <input type="text">X
+          </div>
+        </div>
+
+        <div class="forminput" style="display: none;">
+          <label>Quel est votre nom de famille ?</label>
+          <div class="forminput__container">
+            <input type="text">X
+          </div>
+        </div>
+
+        <div class="forminput" style="display: none;">
+          <label>Quel est votre date de naissance ?</label>
+          <div class="forminput__container">
+            <input type="text">X
+          </div>
+        </div>
+
+        <!-- email adresse layout-->
+        <div class="forminput" style="display: none;">
+          <label>Votre adresse email ?</label>
+          <div class="forminput__container">
+            <input type="text">X
+          </div>
+        </div>
+
+
+        <div class="forminput" style="display: none;">
+          <label>Votre numéro de téléphone ?</label>
+          <div class="forminput__container">
+            <input type="text">X
+          </div>
+        </div>
+
+        <div class="forminput">
+          <button>Enregister</button>
+        </div>
+
+
+      </div>
+      <!-- end form --->
+
+
+
+
+
+
+
+
+
+
+
+
+  <app-footer></app-footer>
+</div>
