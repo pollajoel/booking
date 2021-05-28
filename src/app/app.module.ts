@@ -60,7 +60,7 @@ import {NgxPaginationModule} from 'ngx-pagination';
     NgxUiLoaderModule, // import NgxUiLoaderModule
     NgxUiLoaderRouterModule,
     NgxUiLoaderHttpModule,
-    NgxPaginationModule
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
