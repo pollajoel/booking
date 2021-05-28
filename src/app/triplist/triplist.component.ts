@@ -14,7 +14,7 @@ export class TriplistComponent implements OnInit {
   SPINNER = SPINNER;
   Isinit : Boolean = true;
   p: number = 1;
-
+  items:number = 5;
   constructor(private Trips:TripServices, private ngxService: NgxUiLoaderService) {}
 
   ngOnInit(): void {
@@ -27,6 +27,7 @@ export class TriplistComponent implements OnInit {
     this.ngxService.start(); 
     this.Trips.Users().subscribe((observer)=>{
       this.trip = observer.data;
+      console.log( this.trip );
       this.ngxService.stop();
     } );
 

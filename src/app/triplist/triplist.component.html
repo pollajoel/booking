@@ -1,6 +1,6 @@
 <section class="trip__section">
     <ngx-ui-loader [fgsType]="SPINNER.wanderingCubes"></ngx-ui-loader>
-     <div class="trip__box" *ngFor="let tripi of trip | paginate: { itemsPerPage: 4, currentPage: p}" >
+     <div class="trip__box" *ngFor="let tripi of trip | paginate: { itemsPerPage: items, currentPage: p}" >
             <div class="trip__list" [routerLink] ="['/singletrip',tripi._id]">
                 <ul class="times">
                     <li><span>12H30</span></li>
@@ -19,7 +19,7 @@
                         <img src="../../assets/wakawaka.PNG" class="image__profil">
                     </div>
                     <div>
-                        <span class="userName">UserName</span><br>
+                        <span class="userName" *ngIf="tripi.owner !== undefined">{{tripi.owner?.name}}</span><br>
                         <span class="userName"> <fa-icon [icon]="fastar" class="icon__color"></fa-icon></span>
                         4,7
                     </div>
