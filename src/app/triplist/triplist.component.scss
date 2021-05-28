@@ -79,6 +79,10 @@ cursor: pointer;
     width: 30%;
     padding-top: 14px;
     text-align: right;
+    font-size:18px;
+    font-weight: 500;
+    color: rgb(5, 71, 82);
+
 }
 
 .userName{
@@ -86,3 +90,7 @@ cursor: pointer;
 }
 
 .features__class{position: absolute;}
+
+.ball-grid-pulse > div {
+    background-color: orange;
+  }

@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {MaterialModule} from './material/material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SliderComponent } from './slider/slider.component';
 import { HomeaboutComponent } from './homeabout/homeabout.component';
@@ -24,7 +22,8 @@ import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { SubmittripComponent } from './submittrip/submittrip.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfilegeneraleComponent } from './profilegenerale/profilegenerale.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { NgxUiLoaderModule, NgxUiLoaderRouterModule,NgxUiLoaderHttpModule, } from "ngx-ui-loader";
 
 
 
@@ -48,16 +47,20 @@ import { ProfilegeneraleComponent } from './profilegenerale/profilegenerale.comp
     SubmittripComponent,
     DashboardComponent,
     ProfilegeneraleComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
     FontAwesomeModule,
-    MaterialModule,
     GooglePlaceModule,
     OwlDateTimeModule,
-    OwlNativeDateTimeModule],
+    OwlNativeDateTimeModule,
+    HttpClientModule,
+    NgxUiLoaderModule, // import NgxUiLoaderModule
+    NgxUiLoaderRouterModule,
+    NgxUiLoaderHttpModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
