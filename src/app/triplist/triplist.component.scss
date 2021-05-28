@@ -1,6 +1,7 @@
 .trip__section{
     background: #ededed;
     margin-bottom: 100px;
+    margin-bottom: 0px;
 }
 
 .trip__list{
@@ -93,4 +94,11 @@ cursor: pointer;
 
 .ball-grid-pulse > div {
     background-color: orange;
+  }
+
+
+  .paginate__class{
+    margin-top: 114px;
+    display: flex;
+    justify-content: center;
   }

@@ -24,7 +24,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfilegeneraleComponent } from './profilegenerale/profilegenerale.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxUiLoaderModule, NgxUiLoaderRouterModule,NgxUiLoaderHttpModule, } from "ngx-ui-loader";
-
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 @NgModule({
@@ -60,6 +60,7 @@ import { NgxUiLoaderModule, NgxUiLoaderRouterModule,NgxUiLoaderHttpModule, } fro
     NgxUiLoaderModule, // import NgxUiLoaderModule
     NgxUiLoaderRouterModule,
     NgxUiLoaderHttpModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

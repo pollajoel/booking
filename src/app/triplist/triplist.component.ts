@@ -13,6 +13,7 @@ export class TriplistComponent implements OnInit {
   trip:any;
   SPINNER = SPINNER;
   Isinit : Boolean = true;
+  p: number = 1;
 
   constructor(private Trips:TripServices, private ngxService: NgxUiLoaderService) {}
 
