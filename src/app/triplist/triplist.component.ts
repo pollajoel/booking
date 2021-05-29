@@ -25,7 +25,7 @@ export class TriplistComponent implements OnInit {
   getTripdetails(){
     //this.SpinnerService.show(); 
     this.ngxService.start(); 
-    this.Trips.Users().subscribe((observer)=>{
+    this.Trips.Trips().subscribe((observer)=>{
       this.trip = observer.data;
       console.log( this.trip );
       this.ngxService.stop();

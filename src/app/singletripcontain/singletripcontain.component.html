@@ -9,21 +9,21 @@
             <li>12h30</li>
         </ul>
         <ul>
-            <li class="departure">bruxelles</li>
+            <li class="departure">{{singletrip.departure}}</li>
             <li class="separator"></li>
-            <li class="departure">Charleroi</li>
+            <li class="departure">{{ singletrip.destination}}</li>
         </ul>
     </div>
     <div class="bloc__price">
         <span class="intitule__price">Prix Total pour 1 passager</span>
-        <span class="total__price">24,00</span>
+        <span class="total__price">{{singletrip.price}}  €</span>
     </div>
 
     <!-- USER header start -->
-    <section class="user__description" [routerLink] ="['/userdetails',1]">
-        <div class="header">
+    <section class="user__description" [routerLink] ="['/userdetails',1]" >
+        <div class="header" data-balloon-length="small" aria-label="Voir les details du profil de cet utilisataur" data-balloon-pos="up-left">
             <div class="username__class">
-                <span>SunJ</span><br>
+                <span *ngIf="singletrip.owner.name !== undefined">{{ singletrip.owner.name}}</span><br>
                 <span>4.6/ 5-78 avis</span>
             </div>
             <div class="avatar__class">
@@ -36,10 +36,10 @@
 
 
     <!-- Trip description START-->
-    <section class="text__description">
+    <section class="text__description" *ngIf="singletrip.owner.name!== undefined">
         <div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere, quam vitae vehicula congue, velit tortor pharetra lorem, a ultrices magna nunc non mi. Suspendisse vel commodo erat, et suscipit nisi. Vivamus facilisis justo sit amet tellus tempus, at dapibus nulla interdum. Pellentesque eu velit vehicula metus scelerisque euismod.
+            <p style="text-align: justify;">
+                {{ singletrip.owner.description}}
             </p>
         </div>
     </section>
@@ -47,10 +47,10 @@
 
 
      <!--BEGIN contact section-->
-     <section class="contact__section" [routerLink] ="['/userdetails',1]">
-        <div>
+     <section class="contact__section" [routerLink] ="['/userdetails',1]"  *ngIf="singletrip.owner.name !== undefined">
+        <div data-balloon-length="small" aria-label="Contactez cet utilisateur" data-balloon-pos="up-left">
             <fa-icon [icon]= fasms primaryOpacity="0.2"></fa-icon>
-            <span>Contacter yves</span>
+            <span>Contacter {{ singletrip.owner.name }}</span>
         </div>
     </section>
     <!-- END contact section-->
@@ -80,15 +80,15 @@
 
     </section>
     <!-- end car type-->
-    <div class="title">
+    <div class="title" *ngIf="singletrip.passengers.length > 0">
         <h2>Passagers</h2>
     </div>
-    <section class="passenger_for_this_trip" *ngFor="let pass of listPassengers" [routerLink] ="['/userdetails',1]">
+    <section class="passenger_for_this_trip" *ngFor="let pass of singletrip.passengers" [routerLink] ="['/userdetails',1]">
         <div class="list__passagers" >
             <span>
-                NameOfuser<br>
-                bruxelles   <fa-icon [icon]=faarrow primaryOpacity="0.2"></fa-icon>
-                Chaleroi
+                {{ pass.name }}<br>
+                {{singletrip.departure}}  <fa-icon [icon]=faarrow primaryOpacity="0.2"></fa-icon>
+                {{singletrip.destination}}
             </span>
             <span>
                 <img src="../../assets/profil.svg">

@@ -15,9 +15,17 @@ export class TripServices {
     this.results = [];
   }
 
-  Users() : Observable<Trip>{
+  Trips() : Observable<Trip>{
     return this.http.get<Trip>(this.apiRoot);
   } 
+
+  // Get trip by Id
+  tripsById(id:string):Observable<Trip>{
+    let url = `${this.apiRoot}/${id}`;
+
+    console.log( url );
+    return this.http.get<Trip>(url);
+  }
 
 
 
