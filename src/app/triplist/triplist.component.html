@@ -1,6 +1,18 @@
 <section class="trip__section">
     <ngx-ui-loader [fgsType]="SPINNER.wanderingCubes"></ngx-ui-loader>
-     <div class="trip__box" *ngFor="let tripi of trip | paginate: { itemsPerPage: items, currentPage: p}" >
+     
+    <!--
+    <div class="searchbar" style="height:400px;width: 80%">
+
+        <form style=" background:#fff;">
+
+        </form>
+
+    </div>
+    -->
+    
+    
+    <div class="trip__box" *ngFor="let tripi of trip | paginate: { itemsPerPage: items, currentPage: p}" >
             <div class="trip__list" [routerLink] ="['/singletrip',tripi._id]">
                 <ul class="times">
                     <li><span>12H30</span></li>
