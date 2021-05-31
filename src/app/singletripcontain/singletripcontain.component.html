@@ -20,8 +20,8 @@
     </div>
 
     <!-- USER header start -->
-    <section class="user__description" [routerLink] ="['/userdetails',1]" >
-        <div class="header" data-balloon-length="small" aria-label="Voir les details du profil de cet utilisataur" data-balloon-pos="up-left">
+    <section class="user__description" [routerLink] ="['/userdetails',singletrip.owner._id]" >
+        <div class="header" data-balloon-length="small" aria-label="Voir les details du profil de cet utilisataur" data-balloon-pos="up-left" >
             <div class="username__class">
                 <span *ngIf="singletrip.owner.name !== undefined">{{ singletrip.owner.name}}</span><br>
                 <span>4.6/ 5-78 avis</span>
@@ -203,7 +203,7 @@
         <h2>Passagers</h2>
     </div>
     <section class="passenger_for_this_trip" *ngFor="let pass of singletrip.passengers" [routerLink] ="['/userdetails',1]">
-        <div class="list__passagers" >
+        <div class="list__passagers"  [routerLink] ="['/userdetails',pass._id]">
             <span>
                 {{ pass.name }}<br>
                 {{singletrip.departure}}  <fa-icon [icon]=faarrow primaryOpacity="0.2"></fa-icon>
