@@ -23,12 +23,26 @@ export class SingletripcontainComponent implements OnInit {
   faangle = faAngleRight;
   fasms   = faComment;
   faarrow = faArrowRight;
+  iconaccepte=faPaw;
   preferences = [
     {name:"acceptation automatique",icon:faPaw},
     {name:"acceptation automatique",icon:faSmokingBan},
     {name:"acceptation automatique",icon:faSmokingBan},
     {name:"je ne préfère pas voyager avec des animaux",icon:faSmokingBan}
-  ]
+  ];
+
+  Animals ={
+    isallow:"je peux voyager avec certains animaux",
+    havepreferences:" j'adore les animaux wouaf",
+    notallow:" je ne prefere pas voyager avec les animaaux"
+  }
+
+  Music ={
+    musiclisten: "Musique tout le long !",
+    slience: "Ça dépend de la musique",
+​​​    thatdepends: "Le silence est d'or !",
+  }
+
 
   listPassengers = [{},{},{}]
 
