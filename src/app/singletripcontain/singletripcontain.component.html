@@ -27,7 +27,8 @@
                 <span>4.6/ 5-78 avis</span>
             </div>
             <div class="avatar__class">
-                <img src="../../assets//profil.svg">
+                <img [src]="singletrip.owner.image.url" class="imageUser" *ngIf="singletrip.owner.image.url!==undefined">
+                <img src="../../assets//profil.svg" *ngIf="singletrip.owner.image.url===undefined">
                 <fa-icon [icon]= faangle primaryOpacity="0.2" class="icon__color"></fa-icon>
             </div>
         </div>
@@ -70,11 +71,12 @@
     <section class="car__type">
         <div class="container">
         <div>
-            <span class="car__name">Car Name</span><br>
-            <span>Color</span>
+            <span class="car__name"> {{ singletrip.owner.car.mark}}</span><br>
+            <span>{{ singletrip.owner.car.color}}</span>
         </div>
         <div>
-            <img src="../../assets/car-saloon.svg" class="car__image">
+            <img src="../../assets/car-saloon.svg" class="car__image" *ngIf="singletrip.owner.car.picture===undefined">
+            <img [src]="singletrip.owner.car.picture" class="imageUser" *ngIf="singletrip.owner.car.picture!==undefined">
         </div>
     </div>
 
@@ -91,7 +93,9 @@
                 {{singletrip.destination}}
             </span>
             <span>
-                <img src="../../assets/profil.svg">
+                <img [src]="pass.image.url" class="imageUser" *ngIf="pass.image.url!==undefined">
+                <img src="../../assets//profil.svg" *ngIf="pass.image.url===undefined">
+                
                 <fa-icon [icon]= faangle primaryOpacity="0.2" class="icon__color"></fa-icon>
             </span>
            
