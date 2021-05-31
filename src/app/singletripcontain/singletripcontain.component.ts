@@ -43,6 +43,20 @@ export class SingletripcontainComponent implements OnInit {
 ​​​    thatdepends: "Le silence est d'or !",
   }
 
+  Cigarette ={
+    smokebrealallow:"Voyager avec des fumeurs ne me dérange pas",
+    smokenotallow:"Les pauses cigarette hors de la voiture ne me dérangent pas",
+    smookeallow:"Je ne voyage pas avec des fumeurs"
+  }
+
+Discussion ={
+  notspeak:"Je suis un vrai moulin à paroles !",
+  speakalot:"J'aime bien discuter quand je me sens à l'aise",
+  speaksmall:"Je suis plutôt du genre discret"
+}
+
+
+  maxplace= " max à l\'arrière ";
 
   listPassengers = [{},{},{}]
 
