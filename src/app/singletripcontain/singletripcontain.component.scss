@@ -192,7 +192,7 @@ section.car__type{
     h1{
         text-align: left;
     }
-    
+   
 }
 
 .icon__color{
@@ -201,13 +201,9 @@ section.car__type{
     font-size: 25px;
     color:#708c91;
 }
-
 .title{
     width: 50%;
 }
-
-
-
 section.contact__section{
     width: 47%;
     padding: 20px 20px 20px 20px;
@@ -223,23 +219,18 @@ section.contact__section{
         background: #ededed;
     }
 }
-
-
 .departure{
     list-style-image: url("../../assets/departure.png");
     font-size: 13px;
     font-weight: bolder
 }
-
 .separator{
     list-style-image: url("../../assets/separateur.png");
 }
-
 .car__name{
     text-transform: uppercase;
     font-size: 16px;
 }
-
 .car__image{
     width: 15%;
 }
@@ -256,12 +247,10 @@ section.contact__section{
          margin-bottom: 50px;
      }
 }
-
 .imageUser{
     height: 46px;
     width: 46px;
 }
-
 .filled{
     fill: rgb(112, 140, 145)
 }
