@@ -13,6 +13,7 @@ export class FooterComponent implements OnInit {
   faphone = faMobile;
   faemail = faMailBulk;
   falocate = faLocationArrow;
+  footertext="wakawakacar est le premier réseau de covoiturage au monde. Plus besoin d'aller en ville pour quitter la ville : nous mettons en relation passagers et conducteurs prêts à partager leur trajet en voiture pour leur permettre d'aller partout, et sans changement."
 
 
   constructor() { }

@@ -23,12 +23,14 @@
                     <li class="separator">
                         <span class="number__people"></span>
                     </li>
-                    <li class="departure">{{ tripi.departure }}</li>
+                    <li class="departure">{{ tripi.destination }}</li>
                 </ul>
                 <div class="price__layout">{{ tripi.price}} €</div>
                 <div class="user__profile">
                     <div>
-                        <img src="../../assets/wakawaka.PNG" class="image__profil">
+                        <img src="../../assets/profil.svg" class="image__profil" *ngIf="tripi.owner.image.url===undefined">
+                        <img [src]= tripi.owner.image.url class="image__profil" *ngIf="tripi.owner.image.url!==undefined">
+                   
                     </div>
                     <div>
                         <span class="userName" *ngIf="tripi.owner !== undefined">{{tripi.owner?.name}}</span><br>

@@ -1,4 +1,4 @@
 export class user{
-    constructor(){}
+    constructor( public data:{}){}
         
     }
