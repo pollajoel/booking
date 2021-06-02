@@ -14,7 +14,7 @@
     <div class="avatar__login">
     <ul>
         <li><img src="../../assets/profil.svg"/>
-            <ul *ngIf="!IsLogin">
+            <ul *ngIf="authentification.isLogged">
                 <li class="notConnected">
                     <span class="notlogin">connexion</span>
                     <span class="notconnect__icon">
@@ -29,7 +29,7 @@
                 </li>
             </ul>
 
-            <ul *ngIf="IsLogin">
+            <ul *ngIf="!authentification.isLogged">
 
                 <li *ngFor="let menu of loginMenu" class="submenu" [routerLink]="menu.urlRoute">
 

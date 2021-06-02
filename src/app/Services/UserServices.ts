@@ -27,6 +27,11 @@ export class UserServices {
     return this.http.get<user>(url);
   }
 
+  AddUser(value: any):Observable<user>{
+     let body = JSON.stringify( value );
+    return this.http.post<user>(this.apiRoot,body);
+  }
+
 
 
 

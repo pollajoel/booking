@@ -25,6 +25,7 @@ import { ProfilegeneraleComponent } from './profilegenerale/profilegenerale.comp
 import { HttpClientModule } from '@angular/common/http';
 import { NgxUiLoaderModule, NgxUiLoaderRouterModule,NgxUiLoaderHttpModule, } from "ngx-ui-loader";
 import {NgxPaginationModule} from 'ngx-pagination';
+import {AuthService } from './Services/auth.service';
 
 
 @NgModule({
@@ -62,7 +63,7 @@ import {NgxPaginationModule} from 'ngx-pagination';
     NgxUiLoaderHttpModule,
     NgxPaginationModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

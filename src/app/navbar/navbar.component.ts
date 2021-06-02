@@ -6,6 +6,8 @@ import {faQuoteLeft} from '@fortawesome/free-solid-svg-icons';
 import {faComment} from '@fortawesome/free-solid-svg-icons';
 import {faUserCircle} from '@fortawesome/free-solid-svg-icons';
 import {faTimesCircle} from '@fortawesome/free-solid-svg-icons';
+import { AuthService } from '../Services/auth.service';
+
 
 
 
@@ -29,9 +31,12 @@ export class NavbarComponent implements OnInit {
      {title: 'Déconnexion', icon: faAngleRight, iconleft: faTimesCircle, urlRoute: '/Trips'}
   ];
 
+ 
+  public authentification;
 
-
-  constructor() { }
+  constructor(private auth:AuthService) { 
+    this.authentification = auth;
+  }
 
   ngOnInit(): void {
   }
