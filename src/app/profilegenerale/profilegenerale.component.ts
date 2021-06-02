@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {faPlusCircle} from '@fortawesome/free-solid-svg-icons';
-
 @Component({
   selector: 'app-profilegenerale',
   templateUrl: './profilegenerale.component.html',
