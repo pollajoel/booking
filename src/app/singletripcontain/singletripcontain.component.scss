@@ -11,8 +11,6 @@ h1{
 div.trajet__ul{
     display: flex;
 }
-
-
 .bloc__price{
     border-top: 6px solid #ededed; 
     border-bottom: 6px solid #ededed;
@@ -37,7 +35,6 @@ div.trajet__ul{
         text-align: right;
     }
 }
-
 section{
     display: flex;
     flex-direction: column;
@@ -74,8 +71,6 @@ div.subscribe__trip{
      }
     
 }
-
-
 .user__description{
     display: grid;
     width: 46%;
@@ -234,7 +229,6 @@ section.contact__section{
 .car__image{
     width: 15%;
 }
-
 .times{
     list-style-type: none;
 }
@@ -247,14 +241,8 @@ section.contact__section{
          margin-bottom: 50px;
      }
 }
-.imageUser{
-    height: 46px;
-    width: 46px;
-}
-.filled{
-    fill: rgb(112, 140, 145)
-}
-
+.imageUser{   height: 46px;width: 46px;}
+.filled{fill: rgb(112, 140, 145)}
 .post{
     fill: rgb(112, 140, 145);
     position:relative;
