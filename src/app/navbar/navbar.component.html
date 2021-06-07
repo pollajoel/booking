@@ -14,9 +14,9 @@
     <div class="avatar__login">
     <ul>
         <li><img src="../../assets/profil.svg"/>
-            <ul *ngIf="authentification.isLogged">
+            <ul *ngIf="!authentification.isLogged()">
                 <li class="notConnected">
-                    <span class="notlogin">connexion</span>
+                    <span class="notlogin" routerLink="/login">connexion</span>
                     <span class="notconnect__icon">
                         <fa-icon [icon]= faangle primaryOpacity="1" class="notlogin"></fa-icon>
                     </span>
@@ -29,13 +29,19 @@
                 </li>
             </ul>
 
-            <ul *ngIf="!authentification.isLogged">
+            <ul *ngIf="authentification.isLogged()">
 
                 <li *ngFor="let menu of loginMenu" class="submenu" [routerLink]="menu.urlRoute">
 
                     <fa-icon [icon]= menu.iconleft primaryOpacity="1" class="icon__left"></fa-icon>
                     <span>{{ menu.title}}</span>
                     <fa-icon [icon]= faangle primaryOpacity="1" class="icon__Right"></fa-icon>
+                </li>
+
+                <li (click)="logout()" class="submenu">
+                    <fa-icon [icon]= faTimesCircle class ="icon__left" ></fa-icon>
+                    <span>Deconnexion</span>
+                    <fa-icon [icon]= faangle  primaryOpacity="1" class="icon__Right"></fa-icon>
                 </li>
 
 

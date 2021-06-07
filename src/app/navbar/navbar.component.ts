@@ -7,10 +7,9 @@ import {faComment} from '@fortawesome/free-solid-svg-icons';
 import {faUserCircle} from '@fortawesome/free-solid-svg-icons';
 import {faTimesCircle} from '@fortawesome/free-solid-svg-icons';
 import { AuthService } from '../Services/auth.service';
-
-
-
-
+import {Router} from  '@angular/router';
+//import jwt_decode from "jwt-decode";
+ 
 
 @Component({
   selector: 'app-navbar',
@@ -21,6 +20,7 @@ export class NavbarComponent implements OnInit {
 
   faarrowgle  = faArrowRight;
   faangle = faAngleRight;
+  faTimesCircle =  faTimesCircle;
   public IsLogin = true;
 
   loginMenu = [
@@ -28,15 +28,29 @@ export class NavbarComponent implements OnInit {
     { title: 'Vos trajets', icon: faAngleRight, iconleft: faQuoteLeft, urlRoute: '/Trips'},
     { title: 'Boîte de reception', icon: faAngleRight, iconleft: faComment, urlRoute: '/Messages'},
     { title: 'Profil', icon: faAngleRight, iconleft: faUserCircle, urlRoute: '/profils'},
-     {title: 'Déconnexion', icon: faAngleRight, iconleft: faTimesCircle, urlRoute: '/Trips'}
-  ];
+    ];
 
  
-  public authentification;
+  public authentification:any;
 
-  constructor(private auth:AuthService) { 
+  constructor(private route: Router,private auth:AuthService) { 
     this.authentification = auth;
+    //console.log( auth.isLogged() );
+
+    //console.log( this.authentification.getToken())
+    //if( this.authentification.getToken()!==null ){
+      //var decoded = jwt_decode(this.authentification.getToken());
+      //console.log( decoded );
+   // }
+    
   }
+
+  logout(){
+    this.auth.Logout();
+    this.route.navigate(['/index'])
+  }
+
+
 
   ngOnInit(): void {
   }

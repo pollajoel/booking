@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<!-- login form -->
+<div class="login">
+    <div class="login__form">
+        <div><h1>Renseignez vos identifiants</h1></div>
+        <form [formGroup] ="loginForm" (ngSubmit)="onSubmit()">
+            <div class="input__layout">
+                <input type ="text" formControlName="email" placeholder="email"/>
+            </div>
+            <div class="input__layout">
+                <input type="text" formControlName="passWord" placeholder="mot de passe"/>
+            </div>
+            <div class="call__action">Se souvenir de moi ?</div>
+            <div class="call__action">Mot de passe oublié ?</div>
+            <div class="button__layout"><button type="submit" [disabled]="!loginForm.valid">Connexion <img src="../../assets/svgs/three-dots.svg" class="threedots" [style.visibility]="dot"></button></div>
+        </form>
+    </div>
+</div>
+<!-- login form -->
+<app-footer></app-footer>

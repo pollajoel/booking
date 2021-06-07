@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
-import { JwtHelperService } from '@auth0/angular-jwt';
+
 
 @Injectable()
 
 export class AuthService {  
   storagekey: string = "JWT_key";
+ 
 
  constructor() {}  // ...
   
@@ -16,8 +17,8 @@ export class AuthService {
   return localStorage.getItem(this.storagekey);
  }
 
- isLogged():Boolean{
-   return this.getToken !== null
+ isLogged(){
+   return this.getToken() !== null ;
  }
 
 

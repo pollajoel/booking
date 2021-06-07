@@ -1,16 +1,25 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import {user} from '../class/user';
-import { JsonPipe } from '@angular/common';
-import {Observable,of, from } from 'rxjs';
+import {user, accessToken} from '../class/user';
+import {Observable,of, from} from 'rxjs';
+import { map } from 'rxjs/operators';
+
+
+
 
 @Injectable({
     providedIn: 'root'
   })
 export class UserServices {
-  apiRoot:string = 'https://covoituragebackend.herokuapp.com/api/v1/users';
+  apiRoot:string  = 'https://covoituragebackend.herokuapp.com/api/v1/users';
+  loginUrl:string = 'https://covoituragebackend.herokuapp.com/api/v1/login';
   results:Object[];
   
+
+  accessTokenT: accessToken={
+    error: false,accessToken:""
+  }
+
   constructor(private http:HttpClient) { 
     this.results = [];
   }
@@ -27,9 +36,10 @@ export class UserServices {
     return this.http.get<user>(url);
   }
 
-  AddUser(value: any):Observable<user>{
+  Login(value: any, options:object):Observable<accessToken>{
+  
      let body = JSON.stringify( value );
-    return this.http.post<user>(this.apiRoot,body);
+    return this.http.post<accessToken>(this.loginUrl,body,options);
   }
 
 

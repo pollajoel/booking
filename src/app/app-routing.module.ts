@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SubmittripComponent } from './submittrip/submittrip.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfilegeneraleComponent} from './profilegenerale/profilegenerale.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path: 'contactus', component: ContactComponent},
   {path: 'newTrip', component: SubmittripComponent},
   {path: 'dashboard', component: DashboardComponent},
-  {path: 'profile/generale', component: ProfilegeneraleComponent}
+  {path: 'profile/generale', component: ProfilegeneraleComponent},
+  {path: 'login', component: LoginComponent}
   ];
 
 @NgModule({

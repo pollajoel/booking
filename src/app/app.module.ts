@@ -26,6 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxUiLoaderModule, NgxUiLoaderRouterModule,NgxUiLoaderHttpModule, } from "ngx-ui-loader";
 import {NgxPaginationModule} from 'ngx-pagination';
 import {AuthService } from './Services/auth.service';
+import { LoginComponent } from './login/login.component';
+import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -48,6 +50,7 @@ import {AuthService } from './Services/auth.service';
     SubmittripComponent,
     DashboardComponent,
     ProfilegeneraleComponent,
+    LoginComponent,
     
   ],
   imports: [
@@ -62,6 +65,7 @@ import {AuthService } from './Services/auth.service';
     NgxUiLoaderRouterModule,
     NgxUiLoaderHttpModule,
     NgxPaginationModule,
+    ReactiveFormsModule ,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
