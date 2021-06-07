@@ -42,7 +42,9 @@ export class LoginComponent implements OnInit {
     this.dot="visible";
     this.user.Login(userdata,this.httpOptions).subscribe((observer)=>{
       this.dot = "hidden";
+      if(observer.accessToken !== undefined )
       this.auth.setToken(observer.accessToken);
+      if( this.auth.isLogged() )
       this.route.navigate(["/dashboard"]);
     },err=>{console.warn(err)})
 
