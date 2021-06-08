@@ -17,7 +17,6 @@ import { SingletripcontainComponent } from './singletripcontain/singletripcontai
 import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { OfferseatComponent } from './offerseat/offerseat.component';
 import { ContactComponent } from './contact/contact.component';
-import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { SubmittripComponent } from './submittrip/submittrip.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -27,7 +26,7 @@ import { NgxUiLoaderModule, NgxUiLoaderRouterModule,NgxUiLoaderHttpModule, } fro
 import {NgxPaginationModule} from 'ngx-pagination';
 import {AuthService } from './Services/auth.service';
 import { LoginComponent } from './login/login.component';
-import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -57,7 +56,6 @@ import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    GooglePlaceModule,
     OwlDateTimeModule,
     OwlNativeDateTimeModule,
     HttpClientModule,
