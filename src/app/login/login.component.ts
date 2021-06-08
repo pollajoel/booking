@@ -2,8 +2,9 @@ import { HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../Services/auth.service';
 import { UserServices } from '../Services/UserServices';
-import { FormGroup, FormControl} from '@angular/forms';
-import { Router} from "@angular/router"
+import { FormGroup, FormControl, Validators} from '@angular/forms';
+import { Router} from "@angular/router";
+import Swal from 'sweetalert2'; 
 
 @Component({
   selector: 'app-login',
@@ -20,8 +21,8 @@ export class LoginComponent implements OnInit {
   }
 
   loginForm = new FormGroup({
-    email: new FormControl(''),
-    passWord: new FormControl(''),
+    email: new FormControl('',[Validators.required]),
+    passWord: new FormControl('',[Validators.required]),
   });
 
   dot:string ="hidden";
@@ -34,6 +35,16 @@ export class LoginComponent implements OnInit {
     
   }
 
+  erroalert()  
+  {  
+    Swal.fire({  
+      icon: 'error',  
+      title: 'Oops...',  
+      text: 'Login ou mot de passe incorrecte',  
+      footer: '<a href="/trip">login ou mot de passe oublié ?</a>'  
+    })  
+  } 
+
   onSubmit():void {
     // TODO: Use EventEmitter with form value
   
@@ -45,7 +56,10 @@ export class LoginComponent implements OnInit {
       if(observer.accessToken !== undefined )
       this.auth.setToken(observer.accessToken);
       if( this.auth.isLogged() )
-      this.route.navigate(["/dashboard"]);
+        this.route.navigate(["/dashboard"]);
+      else{
+        this.erroalert();
+      }
     },err=>{console.warn(err)})
 
   }

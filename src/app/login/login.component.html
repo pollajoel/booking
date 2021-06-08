@@ -5,10 +5,10 @@
         <div><h1>Renseignez vos identifiants</h1></div>
         <form [formGroup] ="loginForm" (ngSubmit)="onSubmit()">
             <div class="input__layout">
-                <input type ="text" formControlName="email" placeholder="email"/>
+                <input type ="text" formControlName="email" placeholder="email" class="form-control" required/>
             </div>
             <div class="input__layout">
-                <input type="text" formControlName="passWord" placeholder="mot de passe"/>
+                <input type="text" formControlName="passWord" placeholder="mot de passe" class="form-control" required/>
             </div>
             <div class="call__action">Se souvenir de moi ?</div>
             <div class="call__action">Mot de passe oublié ?</div>
