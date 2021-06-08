@@ -38,10 +38,11 @@ export class LoginComponent implements OnInit {
   erroalert()  
   {  
     Swal.fire({  
-      icon: 'error',  
-      title: 'Oops...',  
-      text: 'Login ou mot de passe incorrecte',  
+      icon: 'warning',  
+      title: 'Oops...', 
+      text: 'Login ou mot de passe incorrecte',
       footer: '<a href="/trip">login ou mot de passe oublié ?</a>'  
+    
     })  
   } 
 
@@ -59,6 +60,7 @@ export class LoginComponent implements OnInit {
         this.route.navigate(["/dashboard"]);
       else{
         this.erroalert();
+        this.loginForm.reset(true);
       }
     },err=>{console.warn(err)})
 
