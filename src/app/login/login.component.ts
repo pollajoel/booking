@@ -49,8 +49,9 @@ export class LoginComponent implements OnInit {
   onSubmit():void {
     // TODO: Use EventEmitter with form value
   
+     this.route.navigate(["/dashboard"]);
 
-    const userdata = this.loginForm.value;
+    /*const userdata = this.loginForm.value;
     this.dot="visible";
     this.user.Login(userdata,this.httpOptions).subscribe((observer)=>{
       this.dot = "hidden";
@@ -62,7 +63,7 @@ export class LoginComponent implements OnInit {
         this.erroalert();
         this.loginForm.reset(true);
       }
-    },err=>{console.warn(err)})
+    },err=>{console.warn(err)})*/
 
   }
 
